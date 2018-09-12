@@ -1,46 +1,117 @@
-body{
-    background-color: rgb(250,241,234);
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
     font-family: Raleway, sans-serif;
     margin: 0px;
     padding: 0px;
 }
-header{
-    background-color: rgb(192,240,223);
+#wrapper{
+    background-color: rgb(250, 241, 234);
+}
+
+header {
+    background-color: rgb(192, 240, 223);
     text-align: center;
 }
-img#logo{
+
+img#logo {
     width: 320px;
 }
-@media all and(min-width:550px){
-    li{
-        display: inline-block;
-    }
-}
-ul{
+
+ul {
     margin: 0px;
     padding: 0px;
 }
-li{
-   background-color: rgb(128,128,128);
+
+li {
+    background-color: rgb(128, 128, 128);
     padding: 10px 10px 10px 20px;
     border-top: 1px solid white;
 }
-li a{
-    color:white;
+
+li a {
+    color: white;
     text-decoration: none;
     font-weight: 700;
 }
-h3{
-    font-weight: 600;
-    color: rgb(220,106,94);
+
+@media all and ( min-width: 550px) {
+    ul {
+        background-color: rgb(128, 128, 128);
+        border-top: 1px solid white;
+    }
+
+    li {
+        display: inline-block;
+        border: none;
+    }
+
 }
-section,footer{
+
+h3 {
+    font-weight: 600;
+    color: rgb(220, 106, 94);
+    font-size: 23px;
+}
+
+section, footer {
     padding: 20px;
 }
-footer{
-    background-color: rgb(128,128,128);
-    color: white;
+
+@media all and (min-width: 550px) {
+    section#nieuws {
+        float: left;
+        width: 40%;
+    }
+
+    section#instrument {
+        float: right;
+        width: 60%;
+    }
 }
-footer h3{
+
+@media all and (min-width: 920px) {
+    section#nieuws {
+        float: left;
+        width: 30%;
+    }
+
+    section#instrument {
+        float: right;
+        width: 70%;
+    }
+
+    article {
+        display: inline-block;
+        width: 48%;
+        margin-right: 20px;
+    }
+
+    article:nth-child(even) {
+        margin-right: 0px;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    div#wrapper {
+        width: 1200px;
+        margin: auto;
+    }
+}
+
+img {
+    width: 100%;
+}
+
+footer {
+    background-color: rgb(128, 128, 128);
+    color: white;
+    clear: both;
+}
+
+footer h3 {
     color: white;
 }
